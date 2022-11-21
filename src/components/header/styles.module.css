@@ -1,0 +1,131 @@
+.container {
+    display: grid;
+    grid-template-columns: 250px auto 150px 90px;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+
+    background: #131921;
+    /* height: 60px; ORIGINAL*/
+    height: 65px;
+    /* test */
+    width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        display: grid;
+        grid-template-columns: 250px 300px 150px 90px;
+        justify-items: center;
+        align-items: center;
+
+        background: #131921;
+        /* height: 60px; ORIGINAL*/
+        height: 65px;
+        /* test */
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 250px auto 150px 90px;
+        justify-items: center;
+        align-items: center;
+
+        background: #131921;
+        /* height: 60px; ORIGINAL*/
+        height: 65px;
+        /* test */
+        width: 100%;
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    border: 1px solid transparent;
+    padding: 15px 5px 0 5px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo:hover {
+    border: 1px solid #fff;
+    padding: 15px 5px 0 5px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+}
+
+.search input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+
+h2 {
+    color: #fff;
+}
+
+.search svg {
+    height: 100%;
+    width: 40px;
+    background: #cd9042;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+}
+
+.search svg:hover {
+    background: #d69136;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.signIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn svg {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.shoppingCart {
+    display: flex;
+    cursor: pointer;
+}
+
+.shoppingCart p {
+    color: #f08804;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.shoppingCart svg {
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+}
+
+
+.signIn p {
+    color: #fff;
+}
