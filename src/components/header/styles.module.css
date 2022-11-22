@@ -6,39 +6,15 @@
     gap: 15px;
 
     background: #131921;
-    /* height: 60px; ORIGINAL*/
     height: 65px;
-    /* test */
-    width: 100%;
 }
 
-@media only screen and (max-width: 720px) {
-    .container {
+@media only screen and (max-width: 850px) {
+    .container{
         display: grid;
         grid-template-columns: 250px 300px 150px 90px;
-        justify-items: center;
-        align-items: center;
-
-        background: #131921;
-        /* height: 60px; ORIGINAL*/
-        height: 65px;
-        /* test */
-        width: 100%;
-    }
-}
-
-@media only screen and (max-device-width: 500px) {
-    .container {
-        display: grid;
-        grid-template-columns: 250px auto 150px 90px;
-        justify-items: center;
-        align-items: center;
-
-        background: #131921;
-        /* height: 60px; ORIGINAL*/
-        height: 65px;
-        /* test */
-        width: 100%;
+        max-width: 100%;
+        min-width: 100em;
     }
 }
 
@@ -124,7 +100,6 @@ h2 {
     color: #fff;
     font-size: 35px;
 }
-
 
 .signIn p {
     color: #fff;

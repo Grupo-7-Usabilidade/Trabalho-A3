@@ -1,16 +1,9 @@
-/* .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
 .cards {
     display: flex;
     flex-direction: center;
     align-items: center;
     flex-direction: column;
-    max-height: 70vh;
+    height: 100vh;
 }
 
 .cards ul{
@@ -18,6 +11,7 @@
     align-items: center;
     grid-gap: 50px;
     grid-template-columns: repeat(4, 1fr);
+    margin: 100px;
 }
 
 .cards li {
@@ -25,6 +19,6 @@
 }
 
 .cards li:hover {
-    transform: scale(1.2);
-    transition: 0.8s;
+    transform: scale(1.05);
+    transition: 0.4s;
 }

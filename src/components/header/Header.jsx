@@ -1,12 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const Header = () => {
+const Header = ({ search, handleSearch }) => {
     // const [nameUser, setNameUser] = useState("Matheus Gonçalves Rocha");
+
     return <nav className={styles.container}>
         <Link to="/">
             <div className={styles.logo}>
@@ -17,7 +18,12 @@ const Header = () => {
             </div>
         </Link>
         <div className={styles.search}>
-            <input type="text" placeholder="digite o nome do produto..." />
+            <input
+                type="text"
+                placeholder="digite o nome do produto..."
+                onChange={(event) => handleSearch(event.target.value)}
+                value={search}
+            />
             <SearchIcon />
         </div>
 
