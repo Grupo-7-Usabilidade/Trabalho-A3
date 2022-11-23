@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.css";
-import Tooltip from '@mui/material/Tooltip';
 import { UseCartContext } from "../../context/context";
 import { filter_array } from "../../utils/filter_array";
 import { Cards } from "../../components/cards/Cards";
