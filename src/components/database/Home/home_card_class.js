@@ -1,8 +1,8 @@
-import Laptop from "../../../assets/images/laptop-screen.png";
-import Book from "../../../assets/images/open-book (1).png";
-import Blender from "../../../assets/images/blender.png";
-import Hardwares from "../../../assets/images/ssd.png";
-import Film from "../../../assets/images/film-slate.png";
+import Laptop from "../../../assets/images/icons/laptop-screen.png";
+import Book from "../../../assets/images/icons/open-book (1).png";
+import Blender from "../../../assets/images/icons/blender.png";
+import Hardwares from "../../../assets/images/icons/ssd.png";
+import Film from "../../../assets/images/icons/film-slate.png";
 
 export const HOME_CARD_CLASS = [
     {

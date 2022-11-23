@@ -6,6 +6,7 @@ import Wrapper from './components/wrapper/Wrapper';
 import Header from './components/header/Header';
 import Books from './pages/Books/Books';
 import { UseSearchContext } from "./context/context";
+import Cart from './pages/Cart/Cart';
 
 function App() {
     const { search, setSearch } = UseSearchContext("");
@@ -18,10 +19,16 @@ function App() {
         } exact />
         <Route path={Routers.BOOKS} element={
             <>
-                <Header />
-                <Wrapper content={<Books />}></Wrapper>
+                <Header search={search} handleSearch={setSearch} />
+                <Wrapper content={<Books search={search} />}></Wrapper>
             </>
-        } exact />
+        } />
+        <Route path={Routers.CART} element={
+            <>
+                <Header search={search} handleSearch={setSearch} />
+                <Wrapper content={<Cart search={search} />}></Wrapper>
+            </>
+        } />
     </Routes>
 }
 

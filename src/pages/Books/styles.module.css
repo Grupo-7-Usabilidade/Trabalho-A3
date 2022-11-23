@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.books{
+    display: grid;
+    align-items: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px;
+}
+
+.books li{
+    list-style: none;
+}
+
+.books li img{
+    height: 80%;
+    border-radius: 20px;
+}
+
+.books li:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}

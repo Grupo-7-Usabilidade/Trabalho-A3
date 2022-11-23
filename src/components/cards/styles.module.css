@@ -10,6 +10,7 @@
     padding: 10px;
     cursor: pointer;
     z-index: 5;
+    gap: 5px;
 }
 
 .container h1{
@@ -26,4 +27,14 @@
 
 .container img{
     width: 220px;
+}
+
+.container button{
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 0 10px; 
+    background: #FCD200;
+    border-color: #FFD814;
+    color: #0F1111;
+    cursor: pointer;
 }

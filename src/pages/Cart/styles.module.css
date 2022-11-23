@@ -1,0 +1,21 @@
+.cart{
+    display: grid;
+    align-items: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px;
+}
+
+.cart li{
+    list-style: none;
+}
+
+.cart li img{
+    height: 80%;
+    border-radius: 20px;
+}
+
+.cart li:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}

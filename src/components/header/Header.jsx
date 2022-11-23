@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { UseCartContext } from "../../context/context";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ search, handleSearch }) => {
     // const [nameUser, setNameUser] = useState("Matheus Gonçalves Rocha");
+    const { cart } = UseCartContext([]);
+    const navigate = useNavigate();
 
     return <nav className={styles.container}>
         <Link to="/">
@@ -35,9 +39,9 @@ const Header = ({ search, handleSearch }) => {
             <PersonIcon />
         </div>
 
-        <div className={styles.shoppingCart}>
+        <div className={styles.shoppingCart} onClick={() => navigate("/cart")}>
             <ShoppingCartIcon />
-            <p>0</p>
+            <p>{cart.length}</p>
         </div>
     </nav>
 };
