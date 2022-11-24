@@ -16,7 +16,7 @@ const Home = ({ search }) => {
                         class_filter.map((card, index) => {
                             return <li key={index} onClick={() => navigate(card.route)}>
                                 <Cards
-                                    title={card.name}
+                                    title={card.title}
                                     icon={card.icon}
                                     isCartTrue={false}
                                 />

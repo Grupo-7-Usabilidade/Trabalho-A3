@@ -6,25 +6,25 @@ import Film from "../../../assets/images/icons/film-slate.png";
 
 export const HOME_CARD_CLASS = [
     {
-        name: "ELETRÔNICOS",
+        title: "ELETRÔNICOS",
         icon: Laptop,
         route: "/eletronics"
     },
     {
-        name: "ELETRODOMÉSTICOS",
+        title: "ELETRODOMÉSTICOS",
         icon: Blender,
     },
     {
-        name: "HARDWARES",
+        title: "HARDWARES E PERIFÉRICOS",
         icon: Hardwares,
     },
     {
-        name: "LIVROS",
+        title: "LIVROS",
         icon: Book,
         route: "/books"
     },
     {
-        name: "FILMES",
+        title: "FILMES",
         icon: Film,
     },
 ];

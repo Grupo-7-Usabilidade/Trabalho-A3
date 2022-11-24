@@ -21,14 +21,13 @@ const Eletronics = ({ search }) => {
         return alert(`"${product.title}" já adicionado no carrinho!`);
     };
     return (
-        <>
             <div className={styles.cards}>
                 <ul>
                     {
                         class_filter.map((card, index) => {
                             return <li key={index} onClick={() => navigate(card.route)}>
                                 <Cards
-                                    title={card.name}
+                                    title={card.title}
                                     icon={card.icon}
                                     isCartTrue={true}
                                     handleCart={() => add_in_cart(card, index)}
@@ -39,7 +38,6 @@ const Eletronics = ({ search }) => {
                     }
                 </ul>
             </div>
-        </>
     )
 };
 

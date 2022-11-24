@@ -1,4 +1,5 @@
 export const HOME = "/";
-export const BOOKS = "/books";
 export const ELETRONICS = "/eletronics";
+export const HOME_APPLIANCES = "/home-appliances";
+export const BOOKS = "/books";
 export const CART = "/cart";
