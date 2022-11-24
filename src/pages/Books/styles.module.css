@@ -22,8 +22,3 @@
     height: 80%;
     border-radius: 20px;
 }
-
-.books li:hover {
-    transform: scale(1.05);
-    transition: 0.4s;
-}

@@ -17,8 +17,3 @@
 .cards li {
     list-style: none;
 }
-
-.cards li:hover {
-    transform: scale(1.05);
-    transition: 0.4s;
-}

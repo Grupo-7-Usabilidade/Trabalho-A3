@@ -8,6 +8,7 @@ export const HOME_CARD_CLASS = [
     {
         name: "ELETRÔNICOS",
         icon: Laptop,
+        route: "/eletronics"
     },
     {
         name: "ELETRODOMÉSTICOS",

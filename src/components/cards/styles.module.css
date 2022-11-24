@@ -38,3 +38,8 @@
     color: #0F1111;
     cursor: pointer;
 }
+
+.container:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
