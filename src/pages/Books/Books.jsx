@@ -13,10 +13,8 @@ const Books = ({ search }) => {
     useEffect(() => {
         fetch("https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=RQsjWFRxTUttxxEfXAvgFDR7rO1ZMYmz")
             .then(response => response.json()).then(e => {
-                setBooks(e.results.books)
-                console.log(e.results.books)
-            }
-            );
+                return setBooks(e.results.books);
+            });
     }, [setBooks]);
 
     const add_in_cart = (book) => {
@@ -39,7 +37,7 @@ const Books = ({ search }) => {
                                 icon={book.book_image}
                                 isCartTrue={true}
                                 handleCart={() => add_in_cart(book, index)}
-                                change_name="Adicionar ao carrinho" 
+                                change_name="Adicionar ao carrinho"
                             />
                         </li>
                     })

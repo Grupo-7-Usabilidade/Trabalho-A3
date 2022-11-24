@@ -8,6 +8,12 @@ import { filter_array } from "../../utils/filter_array";
 const Home = ({ search }) => {
     const navigate = useNavigate();
     const class_filter = filter_array(search, HOME_CARD_CLASS)
+
+
+
+    fetch("https://weather-station-una.herokuapp.com/api/v1/estacoes/").then(e => e.json()).then(e => console.log(e))
+
+
     return (
         <>
             <div className={styles.cards}>
