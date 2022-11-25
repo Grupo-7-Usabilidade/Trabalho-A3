@@ -13,10 +13,12 @@ export const HOME_CARD_CLASS = [
     {
         title: "ELETRODOMÉSTICOS",
         icon: Blender,
+        route: "/home-appliances"
     },
     {
         title: "HARDWARES E PERIFÉRICOS",
         icon: Hardwares,
+        route: "/peripherals"
     },
     {
         title: "LIVROS",
