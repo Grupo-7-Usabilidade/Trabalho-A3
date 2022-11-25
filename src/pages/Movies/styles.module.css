@@ -1,0 +1,25 @@
+.cards{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cards ul{
+    display: grid;
+    align-items: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+}
+
+.cards li{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards li img{
+    height: 78%;
+    border-radius: 20px;
+}

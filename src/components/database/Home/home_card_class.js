@@ -28,5 +28,6 @@ export const HOME_CARD_CLASS = [
     {
         title: "FILMES",
         icon: Film,
+        route: "/movies"
     },
 ];

@@ -10,6 +10,7 @@ import Cart from './pages/Cart/Cart';
 import Eletronics from './pages/Eletronics/Eletronics';
 import Home_Appliances from './pages/Home_Appliances/Home_Appliances';
 import Peripherals from './pages/Peripherals/Peripherals';
+import Movies from './pages/Movies/Movies';
 
 function App() {
     const { search, setSearch } = UseSearchContext("");
@@ -42,6 +43,12 @@ function App() {
             <>
                 <Header search={search} handleSearch={setSearch} />
                 <Wrapper content={<Peripherals search={search} />}></Wrapper>
+            </>
+        } />
+        <Route path={Routers.MOVIES} element={
+            <>
+                <Header search={search} handleSearch={setSearch} />
+                <Wrapper content={<Movies search={search} />}></Wrapper>
             </>
         } />
         <Route path={Routers.CART} element={

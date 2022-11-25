@@ -120,9 +120,37 @@ export const peripherals = [
         title: "HDD Externo Seagate 1TB Expansion USB 3.0 Portatil 2,5'' - STKM1000400",
         icon: "https://m.media-amazon.com/images/I/81pAOJFcsFS._AC_SX679_.jpg",
     },
-
 ];
 
 export const movies = [
-    {},
+    {
+        id: 54,
+        title: "Jurassic Park (1993)",
+        icon: "https://upload.wikimedia.org/wikipedia/pt/e/e7/Jurassic_Park_poster.jpg",
+    },
+    {
+        id: 55,
+        title: "Jaws",
+        icon: "https://www.companyfolders.com/blog/media/2017/07/jaws.jpg",
+    },
+    {
+        id: 56,
+        title: "Titanic",
+        icon: "https://upload.wikimedia.org/wikipedia/pt/2/22/Titanic_poster.jpg",
+    },
+    {
+        id: 57,
+        title: "Avengers (2012)",
+        icon: "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    },
+    {
+        id: 58,
+        title: "Avatar (2009)",
+        icon: "https://i.pinimg.com/originals/6a/92/9e/6a929ec78db7d274e63014c80e57673d.jpg",
+    },
+    {
+        id: 59,
+        title: "Batman Dark Knight (2008)",
+        icon: "https://wallpaperaccess.com/full/442474.jpg",
+    },
 ];
